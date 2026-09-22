@@ -4,40 +4,114 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FLOSYS SMS Opt-In</title>
+  <link rel="canonical" href="https://flosys-org.github.io/a2p-legal/sms-opt-in/" />
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; color: #111; }
-    h1 { font-size: 1.75rem; }
-    .box { border: 1px solid #ddd; border-radius: 12px; padding: 1rem 1.1rem; background: #fafafa; margin: 1.25rem 0; }
-    .field { display: block; margin-bottom: 1rem; }
-    .field span.label { display: block; font-weight: 600; margin-bottom: .35rem; }
-    input[type=tel] { width: 100%; max-width: 28rem; box-sizing: border-box; padding: .55rem .7rem; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem; }
-    label.check { display: flex; gap: .7rem; align-items: flex-start; }
-    input[type=checkbox] { margin-top: .35rem; }
+    :root { color-scheme: light; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; color: #142033; background: #fff; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.25rem; }
     a { color: #0b57d0; }
-    .methods { margin-top: 1.5rem; }
-    .methods h2 { font-size: 1.1rem; margin-bottom: .4rem; }
+    .brand-bar { background: #0f3d5e; color: #fff; padding: 1.35rem 0 1.15rem; }
+    .brand-bar a { color: #e8f3fb; }
+    .wordmark { margin: 0; font-size: 1.45rem; font-weight: 800; letter-spacing: .06em; }
+    .program { margin: .2rem 0 .75rem; font-size: 1rem; }
+    address { font-style: normal; margin: 0; line-height: 1.5; }
+    main { padding: 1.5rem 0 2.75rem; }
+    h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .6rem; }
+    h2 { font-size: 1.15rem; margin: 1.6rem 0 .4rem; }
+    h3 { font-size: 1rem; margin: .9rem 0 .35rem; }
+    .card { border: 1px solid #d5dbe3; border-radius: 12px; padding: 1.1rem 1.1rem 1.2rem; background: #fbfcfe; margin: 1.1rem 0; }
+    .field { display: block; margin-bottom: 1rem; }
+    .field span.label { display: block; font-weight: 650; margin-bottom: .35rem; }
+    .req { color: #8a1c1c; font-weight: 700; }
+    input[type=tel] { width: 100%; max-width: 28rem; box-sizing: border-box; padding: .6rem .7rem; border: 1px solid #8ea0b5; border-radius: 8px; font-size: 1rem; background: #fff; }
+    input[type=tel]:focus { outline: 2px solid #0f3d5e; border-color: #0f3d5e; }
+    label.check { display: flex; gap: .75rem; align-items: flex-start; }
+    input[type=checkbox] { width: 1.2rem; height: 1.2rem; margin-top: .3rem; flex: 0 0 auto; accent-color: #0f3d5e; }
+    .hint { margin: .75rem 0 0; color: #243246; }
+    button { margin-top: 1rem; background: #0f3d5e; color: #fff; border: 0; border-radius: 8px; padding: .7rem 1.15rem; font-size: 1rem; font-weight: 650; cursor: pointer; }
+    button:focus { outline: 2px solid #0f3d5e; outline-offset: 2px; }
+    .confirm { margin-top: 1rem; padding: .85rem .95rem; background: #eef6f0; border: 1px solid #b7d7c3; border-radius: 8px; }
+    .keyword-reply, blockquote.script { margin: .5rem 0 0; padding: .85rem 1rem; background: #f4f7fb; border-left: 4px solid #0f3d5e; }
+    .keyword-reply { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; }
+    blockquote.script { margin-left: 0; }
+    blockquote.script p { margin: 0 0 .75rem; }
+    blockquote.script p:last-child { margin-bottom: 0; }
+    .methods { margin-top: .25rem; }
+    footer { margin-top: 1.75rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
   </style>
 </head>
 <body>
-  <h1>FLOSYS SMS Opt-In</h1>
-  <p>End users opt in to <strong>FLOSYS SMS Notifications</strong> on this page (or an equivalent intake/booking form that shows the same language and fields). This page is the public consent experience for carrier review.</p>
-  <div class="box">
-    <label class="field" for="phone">
-      <span class="label">Mobile phone number</span>
-      <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+1 (555) 555-5555" required />
-    </label>
-    <label class="check">
-      <input type="checkbox" />
-      <span>I agree to receive recurring SMS messages from <strong>FLOSYS</strong> about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply <strong>STOP</strong> to unsubscribe; reply <strong>HELP</strong> for help. <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a>. <a href="https://flosys-org.github.io/a2p-legal/sms-terms/">Terms</a>.</span>
-    </label>
-  </div>
-  <p>The checkbox is <strong>unchecked by default</strong>. The phone number field is required to complete opt-in. Consent is voluntary and is <strong>not</strong> required to purchase FLOSYS services or complete a job booking.</p>
-  <div class="methods">
-    <h2>Other opt-in methods</h2>
-    <p><strong>Text keyword:</strong> Users may also opt in by texting <strong>START</strong>, <strong>YES</strong>, or <strong>SUBSCRIBE</strong> to our Twilio messaging number. They receive a confirmation reply with FLOSYS brand name, purpose, frequency, message-and-data-rates disclosure, STOP/HELP, and Privacy/Terms links before enrollment is active.</p>
-    <p><strong>Verbal:</strong> During booking or onboarding, a FLOSYS representative or AI receptionist reads the same disclosures. The end user must give an affirmative verbal yes. The SMS destination is the number they provide or confirm on the call; consent is recorded in account notes.</p>
-  </div>
-  <p>Support: <a href="tel:+17133980947">713-398-0947</a> · <a href="mailto:kirby@flosys.org">kirby@flosys.org</a></p>
-  <p>Company site: <a href="https://flosys.org/">flosys.org</a> · <a href="https://flosys.org/privacy.html">Site Privacy</a> · <a href="https://flosys.org/terms.html">Site Terms</a></p>
+  <header class="brand-bar">
+    <div class="wrap">
+      <p class="wordmark">FLOSYS</p>
+      <p class="program">FLOSYS SMS Notifications</p>
+      <address>
+        FLOSYS<br />
+        28718 Hidden Cove Drive<br />
+        Magnolia, TX 77354<br />
+        Phone: <a href="tel:+17133980947">713-398-0947</a><br />
+        Email: <a href="mailto:kirby@flosys.org">kirby@flosys.org</a><br />
+        Website: <a href="https://flosys.org/">https://flosys.org/</a>
+      </address>
+    </div>
+  </header>
+  <main class="wrap">
+    <h1>Opt in to FLOSYS SMS</h1>
+    <p>End users opt in to <strong>FLOSYS SMS Notifications</strong> on this page, or on an equivalent intake or booking form that shows the same phone field, unchecked checkbox, and disclosure language. Messages are recurring texts about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates.</p>
+
+    <form id="sms-opt-in-form" class="card" method="get" action="./">
+      <label class="field" for="phone">
+        <span class="label">Mobile phone number <span class="req">(required)</span></span>
+        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+1 (555) 555-5555" minlength="10" required />
+      </label>
+      <label class="check" for="sms-consent">
+        <input id="sms-consent" name="sms_consent" type="checkbox" value="yes" required />
+        <span>I agree to receive recurring SMS messages from <strong>FLOSYS</strong> about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a>. <a href="https://flosys-org.github.io/a2p-legal/sms-terms/">Terms</a>.</span>
+      </label>
+      <p class="hint">The checkbox is <strong>unchecked by default</strong>. Check it only if you want these texts. The phone number field is required to complete opt-in. Consent is voluntary and is <strong>not</strong> required to purchase FLOSYS services or complete a booking.</p>
+      <p class="hint"><strong>Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes.</strong> Details are in the <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a>.</p>
+      <button type="submit">Agree and opt in</button>
+      <p id="opt-in-confirmation" class="confirm" hidden tabindex="-1" role="status"></p>
+    </form>
+
+    <div class="methods">
+      <h2>Other opt-in methods</h2>
+
+      <h3>Text keyword</h3>
+      <p>Users may text <strong>START</strong> to <a href="tel:+13462963380">(346) 296-3380</a>. <strong>YES</strong> and <strong>SUBSCRIBE</strong> sent to that same number are also opt-in keywords. The confirmation reply is:</p>
+      <p class="keyword-reply">FLOSYS: You are opted in. Msg&amp;data rates may apply. Msg frequency varies. Reply HELP for help or STOP to opt out.</p>
+
+      <h3>Verbal</h3>
+      <p>During booking or onboarding, a FLOSYS representative or AI receptionist reads the script below in full. The end user must give an affirmative verbal yes. Silence or “no” is not consent. The SMS destination is the number they provide or confirm on the call. Consent is recorded in account notes.</p>
+      <h3>Verbal script (read in full)</h3>
+      <blockquote class="script">
+        <p>You are speaking with FLOSYS. Our business address is 28718 Hidden Cove Drive, Magnolia, Texas 77354. You can reach us at 713-398-0947 or kirby@flosys.org. Our website is https://flosys.org/.</p>
+        <p>We would like your permission to send recurring SMS text messages from FLOSYS about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies, up to several messages per week. Message and data rates may apply. You can reply STOP to unsubscribe, or reply HELP for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. Our SMS Privacy Policy is at https://flosys-org.github.io/a2p-legal/sms-privacy/ and our SMS Terms are at https://flosys-org.github.io/a2p-legal/sms-terms/.</p>
+        <p>Do you agree to receive these text messages from FLOSYS at the mobile number you are providing on this call? Please say yes to opt in, or no if you do not want texts.</p>
+      </blockquote>
+    </div>
+
+    <footer>
+      <p>Support: <a href="tel:+17133980947">713-398-0947</a> · <a href="mailto:kirby@flosys.org">kirby@flosys.org</a></p>
+      <p>SMS program number: <a href="tel:+13462963380">(346) 296-3380</a></p>
+      <p>Company site: <a href="https://flosys.org/">flosys.org</a> · <a href="https://flosys.org/privacy.html">Site Privacy</a> · <a href="https://flosys.org/terms.html">Site Terms</a></p>
+      <p>SMS program: <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a> · <a href="https://flosys-org.github.io/a2p-legal/sms-terms/">Terms</a> · <a href="https://flosys-org.github.io/a2p-legal/sms-consent-evidence/">Consent evidence</a></p>
+    </footer>
+  </main>
+  <script>
+    (function () {
+      var form = document.getElementById("sms-opt-in-form");
+      var note = document.getElementById("opt-in-confirmation");
+      if (!form || !note) return;
+      form.addEventListener("submit", function (event) {
+        if (!form.checkValidity()) return;
+        event.preventDefault();
+        var phone = (form.phone.value || "").trim();
+        note.hidden = false;
+        note.textContent = "You opted in to recurring SMS from FLOSYS at " + phone + ". Messages may include missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply HELP for help or STOP to opt out.";
+        note.focus();
+      });
+    })();
+  </script>
 </body>
 </html>
