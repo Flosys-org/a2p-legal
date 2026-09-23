@@ -29,18 +29,23 @@
   </address>
 
   <h2>Web checkbox copy</h2>
-  <p>The consent checkbox on the opt-in page is a separate SMS control. It is not pre-checked. Its label reads:</p>
+  <p>The SMS checkbox on the contact form is a separate, <strong>optional</strong> control. It is not pre-checked and is <strong>not required to submit the form</strong>. A visitor who leaves it unchecked still submits their callback request and can still book or buy any FLOSYS service; they simply do not receive texts. Its label reads:</p>
   <blockquote>
-    <p>I agree to receive recurring SMS messages from <strong>FLOSYS</strong> about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a>. <a href="https://flosys-org.github.io/a2p-legal/sms-terms/">Terms</a>.</p>
+    <p>(Optional) I agree to receive recurring SMS messages from <strong>FLOSYS</strong> about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a>. <a href="https://flosys-org.github.io/a2p-legal/sms-terms/">Terms</a>.</p>
   </blockquote>
-  <p>The mobile phone number field above that checkbox is required to complete opt-in. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking.</p>
+  <p>The name and phone fields are used for the callback request. The SMS box is separate and optional: the form submits with or without it. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking.</p>
 
   <h2>Unchecked checkbox state</h2>
   <p>Default state before the end user acts. The box is empty (<code>[ ]</code>), not selected (<code>[x]</code>). No <code>checked</code> attribute is set on the live control.</p>
-  <pre>Mobile phone number (required)
+  <pre>Your name
+[ First and last name         ]
+
+Phone number (so we can call you back)
 [ +1 (555) 555-5555          ]
 
-[ ] I agree to receive recurring SMS messages from FLOSYS about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply STOP to unsubscribe. Reply HELP for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. Privacy Policy: https://flosys-org.github.io/a2p-legal/sms-privacy/ Terms: https://flosys-org.github.io/a2p-legal/sms-terms/</pre>
+[ ] (Optional) I agree to receive recurring SMS messages from FLOSYS about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply STOP to unsubscribe. Reply HELP for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. Privacy Policy: https://flosys-org.github.io/a2p-legal/sms-privacy/ Terms: https://flosys-org.github.io/a2p-legal/sms-terms/
+
+[ Submit request ]   (submits with the box checked or unchecked)</pre>
 
   <h2>Keyword confirmation</h2>
   <p>Users may text START to (346) 296-3380 and receive:</p>
