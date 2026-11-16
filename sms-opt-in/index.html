@@ -57,7 +57,7 @@
   </header>
   <main class="wrap">
     <h1>Contact FLOSYS</h1>
-    <p>Use this form to request a callback from FLOSYS. You can also choose to receive <strong>FLOSYS SMS Notifications</strong> (recurring texts about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates). <strong>Texting is optional.</strong> You can leave the SMS box unchecked and still submit this form, book a job, or buy any FLOSYS service. Any FLOSYS intake or booking form that offers texts uses the same separate, optional, unchecked box and the same disclosure language.</p>
+    <p>Use this form to request a callback from FLOSYS. You can also choose to receive <strong>FLOSYS SMS Notifications</strong> (recurring texts about missed-call follow-up, appointment reminders, booking confirmations and updates, review requests, account setup and service notices, conversational replies, and customer-care updates). <strong>Texting is optional.</strong> You can leave the SMS box unchecked and still submit this form, book a job, or buy any FLOSYS service. Any FLOSYS intake or booking form that offers texts uses the same separate, optional, unchecked box and the same disclosure language.</p>
 
     <form id="sms-opt-in-form" class="card" method="get" action="./">
       <label class="field" for="name">
@@ -70,7 +70,7 @@
       </label>
       <label class="check" for="sms-consent">
         <input id="sms-consent" name="sms_consent" type="checkbox" value="yes" />
-        <span><strong>(Optional)</strong> I agree to receive recurring SMS messages from <strong>FLOSYS</strong> about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a>. <a href="https://flosys-org.github.io/a2p-legal/sms-terms/">Terms</a>.</span>
+        <span><strong>(Optional)</strong> I agree to receive recurring SMS messages from <strong>FLOSYS</strong> about missed-call follow-up, appointment reminders, booking confirmations and updates, review requests, account setup and service notices, conversational replies, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a>. <a href="https://flosys-org.github.io/a2p-legal/sms-terms/">Terms</a>.</span>
       </label>
       <p class="hint">The SMS box is <strong>optional</strong> and <strong>unchecked by default</strong>. Check it only if you want these texts. <strong>You can submit this form without checking the box</strong>: we will still call or email you back and you can still book or buy any FLOSYS service. You just won't get texts. Consent is voluntary and is <strong>not</strong> required to purchase FLOSYS services or complete a booking.</p>
       <p class="hint"><strong>Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes.</strong> Details are in the <a href="https://flosys-org.github.io/a2p-legal/sms-privacy/">Privacy Policy</a>.</p>
@@ -90,9 +90,14 @@
       <h3>Verbal script (read in full)</h3>
       <blockquote class="script">
         <p>You are speaking with FLOSYS. Our business address is 12828 Willow Centre Dr, Ste D, Houston, Texas 77066. You can reach us at 346-590-6353 or kirby@flosys.org. Our website is https://flosys.org/.</p>
-        <p>We would like your permission to send recurring SMS text messages from FLOSYS about missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies, up to several messages per week. Message and data rates may apply. You can reply STOP to unsubscribe, or reply HELP for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. Our SMS Privacy Policy is at https://flosys-org.github.io/a2p-legal/sms-privacy/ and our SMS Terms are at https://flosys-org.github.io/a2p-legal/sms-terms/.</p>
+        <p>We would like your permission to send recurring SMS text messages from FLOSYS about missed-call follow-up, appointment reminders, booking confirmations and updates, review requests, account setup and service notices, conversational replies, and customer-care updates. Message frequency varies, up to several messages per week. Message and data rates may apply. You can reply STOP to unsubscribe, or reply HELP for help. Consent is voluntary and is not required to purchase FLOSYS services or complete a booking. Mobile information will not be shared with third parties or affiliates for their marketing or promotional purposes. Our SMS Privacy Policy is at https://flosys-org.github.io/a2p-legal/sms-privacy/ and our SMS Terms are at https://flosys-org.github.io/a2p-legal/sms-terms/.</p>
         <p>Do you agree to receive these text messages from FLOSYS at the mobile number you are providing on this call? Please say yes to opt in, or no if you do not want texts. Either way, we will still complete your booking.</p>
       </blockquote>
+      <h3>FLOSYS clients (business owners and their staff)</h3>
+      <p>When a business signs up for FLOSYS by phone, the FLOSYS representative asks the owner whether they agree to receive account setup and service texts from FLOSYS at their mobile number, tells them that message frequency varies, that message and data rates may apply, and that they can reply STOP to unsubscribe or HELP for help, and records the owner&rsquo;s answer with the date and time on the order before any text is sent. An owner who says no can still buy and use every FLOSYS service; setup is then completed by email and phone. Clients who agreed receive setup steps, sign-in codes, call summaries, daily briefs and service notices, and can text their own FLOSYS number to manage their receptionist and schedule. Staff members a client authorises, and FLOSYS team members, give the same consent before they receive texts.</p>
+
+      <h3>When you text a business first</h3>
+      <p>If you send a text to a business that uses FLOSYS, you will receive replies to that conversation from that business&rsquo;s number. Replies name the business and FLOSYS. You can reply <strong>STOP</strong> at any time to end messages, or <strong>HELP</strong> for help.</p>
     </div>
 
     <footer>
@@ -117,7 +122,7 @@
           note.focus();
           return;
         }
-        note.textContent = "Thanks! Your request was received. You also opted in to recurring SMS from FLOSYS at " + phone + ". Messages may include missed-call follow-up, appointment reminders, booking confirmations, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply HELP for help or STOP to opt out.";
+        note.textContent = "Thanks! Your request was received. You also opted in to recurring SMS from FLOSYS at " + phone + ". Messages may include missed-call follow-up, appointment reminders, booking confirmations and updates, review requests, account setup and service notices, conversational replies, and customer-care updates. Message frequency varies (up to several messages per week). Message and data rates may apply. Reply HELP for help or STOP to opt out.";
         note.focus();
       });
     })();
